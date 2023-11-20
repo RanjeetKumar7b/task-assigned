@@ -1,3 +1,7 @@
+hosted vercel link :-
+
+**https://task-assigned-delta.vercel.app/**
+
 About App.js Component :-
 first of all importing the data from json file and passing as props in the page.js componenet by using of the spread/rest operator which deconstruct an array or object into separate variables;
 
