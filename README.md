@@ -16,7 +16,8 @@ views_aug, views_jan, views_nov: View counts for the respective months
 
 about style.css file:-
 to give the design to the page i have used css
-1-> General Styling
+
+**General Styling**
 Box Sizing: All elements are set to box-sizing: border-box; to include padding and borders in the element's total width and height.
 
 Body Minimum Width: The body has a minimum width of 360px, ensuring a basic level of responsiveness.
