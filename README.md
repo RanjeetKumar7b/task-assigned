@@ -24,13 +24,13 @@ Body Minimum Width: The body has a minimum width of 360px, ensuring a basic leve
 1-> Navigation Section
 The navigation section is designed with a flex container, featuring a left section with a logo, a line, and the word "STORIES," and a right section containing a "Courses" button.
 
-1-> Header Section
+2-> Header Section
 The header section contains a full-width image (.top_image) with responsive styling for different viewport sizes.
 
-1-> Introduction Section
+3-> Introduction Section
 The introduction section (intro_sec) includes a profile display (profile) and user details (description). It features a responsive layout with flex properties and styling for profile photos, follower counts, and social media links.
 
-1-> Responsive Design
+4-> Responsive Design
 There are the media queries for three breakpoints:
 
 768px: Adjustments for tablets and larger screens.
