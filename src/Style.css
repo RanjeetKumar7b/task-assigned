@@ -344,15 +344,29 @@
       .social_id a{
             word-break:break-all;
       }
-        .description {
-          margin: 0px;
-      }
         .profile_photo img{
           flex-wrap: wrap;
           height: 160px;
-          width: 160px;
-          margin-right: 50px;
-          margin-left:80px;
+          width: 160vh;
+          margin: 110px;
+          margin-top: 30px;
+      }
+      .description{
+        margin-top: -110px;
+      }
+      .profile_info{
+        margin-top: -400px;
+        margin-right: -180px;
+        
+      }
+      .profile_info h3{
+        font-size: 20px;
+      }
+      .profile_info .fsection h3{
+        font-size: 15px;
+      }
+      .profile_info .fsection p{
+        font-size: 10px;
       }
       .post_count{
         width: 20vmax;
