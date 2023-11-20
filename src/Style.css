@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      min-width: 360px;
+  }
+  /* Desiging the nav section*/
+  nav {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    background-color: black;
+    max-height: 120px;
+    min-height: 60px;
+  }
+  nav > div {
+    margin: 10px 15px;
+  }
+  .left {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("./Images/logo.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 2px;
+  }
+  .line {
+    margin-left: 10px;
+    background-color: yellow;
+    width: 2px;
+    height: 80px;
+  }
+  .word {
+    margin-left: 10px;
+    letter-spacing: 5px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  .course_button {
+    background-color: yellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+  /* Desiging the header section which consist of image at the top*/
+  header div {
+    width: 100%;
+  }
+  .top_image {
+    background-image: url("./Images/paris-bridge-horizontal.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 40vh;
+  }
+  /* Desiging the introduction section   */
+  .intro_sec{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 20px;
+    align-items: center;
+  }
+  
+  .profile_photo, .profile_info{
+      width: 50%;
+  }
+  .profile_photo {
+      display: flex;
+      align-items: center;
+      margin-top: -70px;
+      margin-left: 10px;
+      margin-right: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      
+  }
+  .profile_photo img{
+      max-height: 300px;
+      max-width: 300px;
+      /* min-height: 225px;
+      min-width: 225px; */
+      height: 220px;
+      width: 220px;
+      margin-top: 10px;
+      border-radius: 50%;
+      border: 2px solid black;
+  }
+  .profile_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .profile_info > h3{
+      font-size: 2.2rem;
+  }
+  .fsection {
+    display: flex;
+    justify-content: space-around;
+    height: max-content;
+    width: max-content;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 5px;
+  
+  }
+  .followers,.following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px 20px;
+    border-color: grey;
+    border-radius: 15px;
+    width: min-content;
+  }
+  .followers h3, .following h3{
+      font-size: 2rem;
+      color: grey;
+  }
+  .description {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0px 20px;
+      width: 50%;
+      justify-content: center;
+  }
+  
+  .details {
+      /* font-size: 2rem; */
+      font-size: 2vw;
+      color: grey;
+      text-align: center;
+  }
+  .social_id{
+      text-align: center;
+      text-wrap:wrap;
+      word-break:break-all;
+  }
+  .social_id a{
+      text-decoration: none;
+        word-break:break-all;
+      text-wrap: wrap;
+      font-size: 2vw;
+      color: #17a9fd;
+      margin-left: 20vw;
+    }
+  .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 8vw;
+  }
+  .img_pro {
+    height: 40px;
+    width: 40px;
+    padding: 12%;
+  }
+  .stars, .likes, .hearts, .views{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* Designing the post section */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 25px;
+  }
+  .post_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.3px 0.3px 0px 0.3px;
+    border-color: lightgrey;
+    margin-left: -50vw;
+    z-index: 3;
+    position: relative;
+    top: 1px;
+    background-color: rgb(255, 255, 255);
+  }
+  .post_count h1{
+    font-size: -2vmax;
+    
+  }
+  .post {
+    border-top: solid;
+    border-color: lightgrey;
+    border-width: 0.3px 0px 0.3px 0px;
+  }
+  .post p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .post_info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  /* made responsive page */
+  @media screen and (max-device-width: 768px) {
+    .post_count{
+      margin-left: -75vw;
+      width: 28vw;
+    }
+      nav{
+          max-height: 80px;
+      }   
+  .logo {
+      width: 60px;
+      height: 60px;
+    }
+    .line {
+      height: 60px;
+    }
+    .word {
+      margin-left: 10px;
+      letter-spacing: 5px;
+    }
+   
+    .course_button {
+      font-size: 1.3rem;
+      padding: 8px 16px;
+    }
+  
+    .profile{
+      flex-wrap: nowrap;
+    }
+  
+    .profile_photo img{
+        height: auto;
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    .profile_info > h3{
+      font-size: 2rem; 
+      margin-top: 10px;
+  }
+  .fsection {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+  .followers h3, .following h3{
+      font-size: 1.75rem;
+  }
+  .description {
+      align-items: center;
+      margin: 0px 5px;
+      justify-content: center;
+    }
+    
+    .details {
+      font-size: 1.5rem;
+      color: grey;
+      word-wrap: break-word;
+      justify-content: left;
+    }
+    .social_id{
+      margin-left: -20vw;
+      }
+      .social_id a{
+      font-size: 1.3rem;
+      color: #17a9fd;
+    }
+  
+  }
+  
+  @media (max-device-width: 600px) {
+  .profile{
+      margin: 0px 10px;
+  }
+  .post_count{
+    margin-left: -70vw;
+    width: 30vw;
+  }
+      .fsection{
+      column-gap: 8px;
+  }
+  .profile_photo {
+      
+      margin-top: -70px;
+      margin-left: 5px;
+      margin-right: 5px;
+      
+  }
+  
+  .followers, .following {
+  
+    padding: 5px 10px;
+    border-color: grey;
+    border-radius: 15px;
+  }
+      
+      .followers h3, .following h3{
+          font-size: 1.5rem;
+      }
+      .description {
+      width: 90%;
+      }
+  } 
+  
+  @media screen and (max-device-width: 494px){
+      .profile{
+          flex-wrap: wrap;
+          margin: 0;
+      }
+      .social_id a{
+            word-break:break-all;
+      }
+        .description {
+          margin: 0px;
+      }
+        .profile_photo img{
+          flex-wrap: wrap;
+          height: 160px;
+          width: 160px;
+          margin-right: 50px;
+          margin-left:80px;
+      }
+      .post_count{
+        width: 20vmax;
+        margin-left: -70vw;
+        font-size: 10px;
+        position:sticky;
+        margin-bottom: -2px;
+      }
+  }
+  @media screen and (min-device-width:769px) {
+    .post_count{
+      margin-right:120px;
+      font-size: 2vmin;
+      width:20vw;
+    }
+    a{
+        margin-left: 20vw;
+        font-size: 15vmax;
+    }
+    .details{
+      margin-left: 20vw;
+      
+    }
+  }
+  
