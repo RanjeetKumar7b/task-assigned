@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+About App.js Component :-
+first of all importing the data from json file and passing as props in the page.js componenet by using of the spread/rest operator which deconstruct an array or object into separate variables;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About page.js componenet :-
+It appears to be displaying information about a user, specifically Anuj Gosalia, who is identified as the co-founder and CEO at Terribly Tiny Tales and The Page component accepts various props to customize the displayed information where it will be building the structure of the page design and storing the value of props in varible
+post: Number of posts.
+star: Number of stars.
+like: Number of likes.
+seen: Number of views.
+hearts: Number of hearts.
+followers: Number of followers.
+following: Number of users being followed.
+aug, jan, nov: Counts related to the respective months.
+aug_time, jan_time, nov_time: Time information related to the respective months.
+views_aug, views_jan, views_nov: View counts for the respective months
 
-## Available Scripts
+about style.css file:-
+to give the design to the page i have used css
+1-> General Styling
+Box Sizing: All elements are set to box-sizing: border-box; to include padding and borders in the element's total width and height.
 
-In the project directory, you can run:
+Body Minimum Width: The body has a minimum width of 360px, ensuring a basic level of responsiveness.
 
-### `npm start`
+1-> Navigation Section
+The navigation section is designed with a flex container, featuring a left section with a logo, a line, and the word "STORIES," and a right section containing a "Courses" button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1-> Header Section
+The header section contains a full-width image (.top_image) with responsive styling for different viewport sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1-> Introduction Section
+The introduction section (intro_sec) includes a profile display (profile) and user details (description). It features a responsive layout with flex properties and styling for profile photos, follower counts, and social media links.
 
-### `npm test`
+1-> Responsive Design
+There are the media queries for three breakpoints:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+768px: Adjustments for tablets and larger screens.
+600px: Further adjustments for smaller screens.
+494px: Specific styling for mobile devices, optimizing layout and font sizes.
