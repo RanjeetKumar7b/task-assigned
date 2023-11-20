@@ -2,10 +2,10 @@ hosted vercel link :-
 
 **https://task-assigned-delta.vercel.app/**
 
-About App.js Component :-
+About App.js :-
 first of all importing the data from json file and passing as props in the page.js componenet by using of the spread/rest operator which deconstruct an array or object into separate variables;
 
-About page.js :-
+About page.js Component :-
 It appears to be displaying information about a user, specifically Anuj Gosalia, who is identified as the co-founder and CEO at Terribly Tiny Tales and The Page component accepts various props to customize the displayed information where it will be building the structure of the page design and storing the value of props in varible
 post: Number of posts.
 star: Number of stars.
