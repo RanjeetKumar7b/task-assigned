@@ -3,12 +3,7 @@ import Like from "./Images/like-btn.jpeg";
 import Stars from "./Images/icons8-star-64.png";
 import Views from "./Images/icons8-views-64.png";
 import Heart from "./Images/heart.png";
-function Page(props) {
-  const { post, star, like, seen, hearts,
-    followers, following, aug,
-    jan, nov, aug_time, jan_time,
-    nov_time, views_aug, views_jan,
-    views_nov } = props;
+function Page(information) {
   return (
     <div>
       <nav>
@@ -33,11 +28,11 @@ function Page(props) {
             <h3>Anuj Gosalia</h3>
             <div className="fsection">
               <div className="followers">
-                <h3>{followers}</h3>
+                <h3>{information.followers}</h3>
                 <p>Followers</p>
               </div>
               <div className="following">
-                <h3>{following}</h3>
+                <h3>{information.following}</h3>
                 <p>Following</p>
               </div>
             </div>
@@ -46,81 +41,74 @@ function Page(props) {
         <div className="description">
           <div className="details">
             <p>
-              Co-founder & CEO at Terribly Tiny Tales
+              {information.profile}
             </p>
           </div>
           <div className="social_id">
             <a href="https://instagram.com/anujgosalia?igshid=MzMyNGUyNmU2YQ==">
-                https://instagram.com/anujgosalia</a>
+                {information.insta}</a>
           </div>
 
           <div className="links">
             <div className="stars">
               <img className="img_pro" src={Stars} alt='loading' />
-              <h3>{star}</h3>
+              <h3>{information.star}</h3>
             </div>
             <div className="likes">
               <img className="img_pro" src={Like} alt='loading' />
-              <h3>{like}</h3>
+              <h3>{information.like}</h3>
             </div>
             <div className="views">
               <img className="img_pro" src={Views} alt='loading' />
-              <h3>{seen}k</h3>
+              <h3>{information.seen}k</h3>
             </div>
             <div className="hearts">
               <img className="img_pro" src={Heart} alt='loading' />
-              <h3>{hearts}k</h3>
+              <h3>{information.hearts}k</h3>
             </div>
           </div>
         </div>
       </section>
       <main>
-        <div className="post_count"><h1 style={{ "color": "#0165e1" }}>{post} Posts</h1></div>
+        <div className="post_count"><h1 style={{ "color": "#0165e1" }}>{information.post}</h1></div>
         <div className="posts">
           <div className="post">
-            <h1>A Changing World Order </h1>
+            <h1>{information.title1} </h1>
             <p>
-              The World is Changing at a feverish pace. Friends, colleagues and
-              everyone engaged in knowledge work are beginning to sesnse
-              this,including...
+              {information.content1}
             </p>
             <div className="post_info">
               <h3>
-                <span className="post_adj" style={{ "color": "#17a9fd" }}>musing </span>by
-                anujgosalia
+                <span className="post_adj" style={{ "color": "#17a9fd" }}>{information.category1} </span>
+                {information.author1}
               </h3>
-              <p>August {aug} . {aug_time} mins Read . {views_aug} Views</p>
+              <p>{information.aug} . {information.aug_time} . {information.views_aug}</p>
             </div>
           </div>
           <div className="post">
-            <h1>Indian v/s Australia</h1>
+            <h1>{information.title2}</h1>
             <p>
-              Think about it- this cricket series was akin to therapy.<br /><br />
-              Laying our childhood trauma up top, working with it slowly and
-              surely over two m...
+              {information.content2}
             </p>
             <div className="post_info">
               <h3>
-                <span className="post_adj" style={{ "color": "#17a9fd" }}>thought </span>by
-                anujgosalia
+                <span className="post_adj" style={{ "color": "#17a9fd" }}>{information.category2}</span>{information.author2}
               </h3>
-              <p>January {jan} . {jan_time} mins Read . {views_jan} Views</p>
+              <p>{information.jan} . {information.jan_time} . {information.views_jan}</p>
             </div>
           </div>
           <div className="post">
-            <h1>Write To Build</h1>
-            <p>
-              Writing is the first step to create:<br /><br /><br />
-              - Stories<br />
-              - Product<br />
-              - Companies
+            <h1>{information.title3}</h1>
+            <p>{information.content3}<br/><br /><br />
+              {information.story}<br />
+              {information.product}<br />
+              {information.company}
             </p>
             <div className="post_info">
               <h3>
-                <span className="post_adj" style={{ "color": "#17a9fd" }}>thought </span>by
-                anujgosalia
+                <span className="post_adj" style={{ "color": "#17a9fd" }}>{information.category3}</span>{information.author3}
               </h3>
-              <p>November {nov} . {nov_time} mins Read . {views_nov} Views</p>
+              <p>{information.nov} . {information.nov_time} . {information.views_nov}</p>
             </div>
           </div>
         </div>
